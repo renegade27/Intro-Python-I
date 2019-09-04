@@ -21,3 +21,4 @@ with open('foo.txt') as f:
 # YOUR CODE HERE
 with open('bar.txt', 'w+') as b:
     b.write('First line Second line Third line')
+    print(b.read())
