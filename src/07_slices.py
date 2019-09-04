@@ -12,26 +12,36 @@ Use Python's slice syntax to achieve the following:
 a = [2, 4, 1, 7, 9, 6]
 
 # Output the second element: 4:
-print()
+print(a[1:2])
 
 # Output the second-to-last element: 9
-print()
+print(a[a.__len__()-2:a.__len__()-1])
 
 # Output the last three elements in the array: [7, 9, 6]
-print()
+print(a[3:6])
 
 # Output the two middle elements in the array: [1, 7]
-print()
+print(a[2:4])
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
-print()
+print(a[1:a.__len__()])
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
-print()
+print(a[0:a.__len__()-1])
 
 # For string s...
 
 s = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
-print()
+new_s = ""
+counter=1
+for ltr in s:
+    counter+=1
+    if(counter==1):
+        pass
+    if(counter>=7):
+        pass
+    else:
+        new_s += s[-1*counter]
+print(new_s[::-1])    
