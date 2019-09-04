@@ -35,23 +35,10 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-waypoints.append({
-    "lat": 56,
-    "lon": -210,
-    "name": "a fourth place"
-})
 
-print(waypoints)
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
 # YOUR CODE HERE
-for obj in waypoints:
-    obj['lon'] = -130 if obj['name'] == "a place" else obj['lon']
-
-print(waypoints)
 
 # Write a loop that prints out all the field values for all the waypoints
-for obj in waypoints:
-    for var in obj:
-        print(obj[var])
 # YOUR CODE HERE

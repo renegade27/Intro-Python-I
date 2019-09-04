@@ -6,12 +6,11 @@ x = 12
 
 def changeX():
     x = 99
-    return x
 
 changeX()
 
 # This prints 12. What do we have to modify in changeX() to get it to print 99?
-print(changeX())
+print(x)
 
 
 # This nested function has a similar problem.
@@ -21,7 +20,6 @@ def outer():
 
     def inner():
         y = 999
-        print(y)
 
     inner()
 
